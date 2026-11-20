@@ -1,0 +1,41 @@
+
+#include <stdio.h>
+
+int main(void)
+{
+    int consumer_id = 1001;
+    char consumer_name[50] = "Ravi";
+    unsigned int previous_reading = 1200;
+    unsigned int current_reading = 1450;
+    unsigned int consumption = 0;
+    double bill_amount = 0.0;
+
+    consumption = current_reading - previous_reading;
+    bill_amount = 100.0;
+
+    printf("Consumer ID: %d\n", consumer_id);
+    printf("Consumer Name: %s\n", consumer_name);
+    printf("Previous Reading: %u\n", previous_reading);
+    printf("Current Reading: %u\n", current_reading);
+    printf("Consumption: %u units\n", consumption);
+    printf("Bill Amount: Rs. %.2f\n", bill_amount);
+
+    printf("\nSize of int: %zu bytes\n", sizeof(int));
+    printf("Size of unsigned int: %zu bytes\n",
+           sizeof(unsigned int));
+    printf("Size of double: %zu bytes\n", sizeof(double));
+
+    return 0;
+}
+
+
+
+
+
+Expected output :
+Consumer ID: 1001
+Consumer Name: Ravi
+Previous Reading: 1200
+Current Reading: 1450
+Consumption: 250 units
+Bill Amount: Rs. 100.00
