@@ -1,0 +1,34 @@
+
+# Task 08 – Compilation Process
+
+## Aim
+To understand the stages of compiling a C program using GCC.
+
+## Compilation Stages
+
+1. Preprocessing
+2. Compilation
+3. Assembly
+4. Linking
+5. Execution
+
+## GCC Commands
+
+Preprocessing:
+gcc -E billing.c -o billing.i
+
+Generate assembly:
+gcc -S billing.c -o billing.s
+
+Generate object file:
+gcc -c billing.c -o billing.o
+
+Generate executable:
+gcc billing.c -o billing
+
+Run:
+./billing
+
+## Conclusion
+The GCC compiler converts C source code into an executable program through preprocessing, compilation, assembly and linking.
+
