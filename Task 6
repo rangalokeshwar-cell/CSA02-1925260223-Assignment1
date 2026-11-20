@@ -1,0 +1,45 @@
+
+#include <stdio.h>
+
+int main(void)
+{
+    int consumer_id;
+    char name[50];
+    unsigned int previous, current;
+
+    printf("Enter consumer ID: ");
+    if (scanf("%d", &consumer_id) != 1)
+        return 1;
+
+    printf("Enter consumer name: ");
+    if (scanf("%49s", name) != 1)
+        return 1;
+
+    printf("Enter previous reading: ");
+    if (scanf("%u", &previous) != 1)
+        return 1;
+
+    printf("Enter current reading: ");
+    if (scanf("%u", &current) != 1)
+        return 1;
+
+    printf("\n--- Consumer Details ---\n");
+    printf("ID: %d\n", consumer_id);
+    printf("Name: %s\n", name);
+    printf("Previous: %u\n", previous);
+    printf("Current: %u\n", current);
+
+    return 0;
+}
+
+Expected output:
+Enter consumer ID: 1001
+Enter consumer name: Ravi
+Enter previous reading: 1200
+Enter current reading: 1450
+
+--- Consumer Details ---
+ID: 1001
+Name: Ravi
+Previous: 1200
+Current: 1450
