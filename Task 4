@@ -1,0 +1,20 @@
+
+#include <stdio.h>
+
+#define SQUARE(x) ((x) * (x))
+#define MAXIMUM(a, b) ((a) > (b) ? (a) : (b))
+
+int main(void)
+{
+    int number = 5;
+    int a = 20, b = 30;
+
+    printf("Square: %d\n", SQUARE(number));
+    printf("Maximum: %d\n", MAXIMUM(a, b));
+
+    return 0;
+}
+
+Expected output:
+Square: 25
+Maximum: 30
