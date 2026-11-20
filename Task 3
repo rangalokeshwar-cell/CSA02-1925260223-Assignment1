@@ -1,0 +1,26 @@
+
+#include <stdio.h>
+
+#define FIXED_CHARGE_PAISE 5000
+
+int main(void)
+{
+    const int first_slab_limit = 100;
+    const int second_slab_limit = 200;
+
+    printf("Fixed charge: %d paise\n",
+           FIXED_CHARGE_PAISE);
+    printf("First slab limit: %d units\n",
+           first_slab_limit);
+    printf("Second slab limit: %d units\n",
+           second_slab_limit);
+
+    return 0;
+}
+
+
+Expected output :
+
+Fixed charge: 5000 paise
+First slab limit: 100 units
+Second slab limit: 200 units
