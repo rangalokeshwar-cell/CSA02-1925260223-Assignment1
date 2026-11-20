@@ -1,0 +1,51 @@
+
+# CSA02 – Assignment 1
+## Reliable Billing Program for a Rural Electricity Co-operative
+
+**Student Name:** Gudimetta Ranga Lokeshwar  
+**Register Number:** 1925260223  
+**Course:** CSA02 – C Programming  
+**Submission Date:** 20 November 2026
+
+**GitHub Repository:**  
+https://github.com/rangalokeshwar-cell/CSA02-1925260223-Assignment1
+
+## Project Description
+This project develops a C program for calculating electricity bills for a rural electricity co-operative. It considers meter readings, electricity consumption, tariff slabs, fixed charges, meter rollover, and accurate monetary calculations.
+
+## Objectives
+1. Understand the electricity billing problem.
+2. Select suitable C data types.
+3. Use constants and macros.
+4. Organize code using header files.
+5. Read and display customer information.
+6. Perform safe type conversions.
+7. Understand the C compilation process.
+8. Implement an electricity billing program.
+9. Test normal and exceptional cases.
+10. Design a scalable smart-meter billing solution.
+
+## Folder Description
+Each task has a separate folder containing its explanation and relevant C source code. The Screenshots folder is reserved for genuine screenshots captured during program execution.
+
+## Compilation
+Compile a C file using GCC:
+
+```bash
+gcc filename.c -o program
+```
+
+Run on Linux:
+
+```bash
+./program
+```
+
+On Windows:
+
+```bash
+program.exe
+```
+
+## Note
+The tariff values in the demonstration program are illustrative. Replace them with the official tariff values provided by the faculty, if different.
