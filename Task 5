@@ -1,0 +1,24 @@
+
+#include <stdio.h>
+#include "billing.h"
+
+unsigned int consumption(unsigned int previous,
+                         unsigned int current)
+{
+    if (current >= previous)
+        return current - previous;
+
+    return (65535U - previous) + current + 1U;
+}
+
+int main(void)
+{
+    printf("Consumption: %u units\n",
+           consumption(1200, 1450));
+
+    return 0;
+}
+
+
+Expected Output:
+250
