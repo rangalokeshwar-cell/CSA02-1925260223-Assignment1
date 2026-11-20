@@ -1,0 +1,29 @@
+
+#include <stdio.h>
+
+int main(void)
+{
+    int units = 150;
+    int rate_paise = 250;
+
+    long long energy_charge_paise =
+        (long long)units * rate_paise;
+
+    double amount_rupees =
+        energy_charge_paise / 100.0;
+
+    printf("Units: %d\n", units);
+    printf("Rate: %d paise per unit\n", rate_paise);
+    printf("Energy charge: %lld paise\n",
+           energy_charge_paise);
+    printf("Energy charge: Rs. %.2f\n",
+           amount_rupees);
+
+    return 0;
+}
+
+expected output
+Units: 150
+Rate: 250 paise per unit
+Energy charge: 37500 paise
+Energy charge: Rs. 375.00
